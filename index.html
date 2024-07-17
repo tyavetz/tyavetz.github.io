@@ -31,13 +31,24 @@
 						<nav>
 							<ul>
 								<li><a href="#about">About</a></li>
-								<li><a href="#research">Research</a></li>
+								<!--<li><a href="#research">Research</a></li>-->
+								<li>
+									<div class="dropdown">
+										<a href="#research">Research<i class="fa fa-caret-down"></i></a>
+										<div class="dropdown-options" style="background-color:#262626;opacity:1.0">
+											<a href="#structure">Galactic Structure</a>
+											<a href="#fdm">Fuzzy Dark Matter</a>
+											<a href="#satellites">Earth Satellites</a>
+										</div>
+									</div>
+								</li>
 								<li><a href="#CV">C.V.</a></li>
+								<!-- <li><a href="images/TomerYavetzCV.pdf">C.V.</a></li> -->
 								<li><a href="#publications">Publications</a></li>
 								<li><a href="#talks">Talks</a></li>
 								<li><a href="#teaching">Teaching</a></li>
 								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
 					</header>
@@ -48,52 +59,226 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Hi! About me. Also, check out my <a href="#research">research</a>.</p>
-								<p>More details.</p>
+								<span class="image main"><img src="images/TDY.jpg" alt="" /></span>
+								<p>Hi! I am a theoretical and computational astrophysicist, studying dynamical phenomena on scales ranging from galaxies to satellites in low Earth orbit. I am currently a member of the School of Natural Sciences at the <a href="https://www.ias.edu/">Institute for Advanced Study</a>.</p>
+								<p> My current <a href="#research">research</a> involves applying the tools of theoretical dynamics to study the structure of galaxies like the Milky Way. I focus on studying how smaller groupings of stars – including globular clusters, open clusters, and binary star systems – are affected by the Milky Way, and what we can learn about our Galaxy’s structure and evolution based on the present-day configurations of these star groups. I am also interested in using dynamics to understand the nature of dark matter and compare between different models of dark matter. I have developed numerical tools to simulate and analyze galaxies composed of fuzzy dark matter.</p>
+								<p>I completed my PhD in 2022 in the <a href="https://www.astro.columbia.edu/">Department of Astronomy & Astrophysics</a> at <a href="https://www.columbia.edu/">Columbia University</a> under the supervision of <a href="http://user.astro.columbia.edu/~kvj/">Kathryn Johnston</a> and <a href="http://user.astro.columbia.edu/~lhui/">Lam Hui</a>. Prior to that, I spent three years working in management consulting at <a href="https://www.mckinsey.com/">McKinsey & Company</a>. I graduated in 2014 from <a href="https://www.princeton.edu/">Princeton University</a>, where I majored in <a href="https://web.astro.princeton.edu/">Astrophysics</a> and completed my undergraduate senior thesis under the supervision of <a href="https://www.simonsfoundation.org/people/david-spergel/">David Spergel</a>.</p>
 							</article>
 
 						<!-- Research -->
 							<article id="research">
 								<h2 class="major">Research</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Galactic Dynamics</p>
-								<p>Fuzzy Dark Matter</p>
+								<p><a href="#structure">Galactic Structure and Stellar Streams</a></p>
+								<span class="image main"><img src="images/R_GD_1.jpg" alt="" /></span>
+								<p><a href="#fdm">Fuzzy Dark Matter</a></p>
+								<span class="image main"><img src="images/R_FDM_3.png" alt="" /></span>
+								<p><a href="#satellites">Low Earth Orbit Satellites</a></p>
+								<span class="image main"><img src="images/R_ES_1.png" alt="" /></span>
 							</article>
 
-						<!-- C.V. -->
+						<!-- Galactic Structure -->
+							<article id="structure">
+								<h2 class="major">Galactic Structure</h2>
+								<p>Below are a few selected highlights from my research on galactic structure. For more, see my list of <a href="#publications">Publications</a>.</p>
+
+								<h3>How to Study the Galactic Bar Using Binary Star Systems (<font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240707151Y/abstract">Yavetz 2024</a></font>)</h3>
+								<p>Many of the stars in the Milky Way are members of binary systems, and a subset of these eventually become gravitationally unbound due to a combination of the Galactic tidal field and kicks from passing objects. The cumulative distribution of unbound binary separations at different locations in the Galaxy is highly sensitive to the presence of large structures in the Galaxy, such as a rigidly rotating Galactic bar.</p>
+								<span class="image main"><img src="images/R_GD_1.jpg" alt="" /></span>
+
+								<h3>Stream Morphology as a Probe of the Milky Way Halo’s Shape (<font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...954..215Y/abstract">Yavetz et al. 2023</a></font>)</h3>
+								<p>When a globular cluster or a dwarf galaxy falls into a galaxy like the Milky Way, it typically gets shredded into a long, one-dimensional filament of stars known as a stellar stream. However, many observed stellar streams boast additional (and often unexplained) features, including gaps, bifurcations, kinks, and fans. We catalogued a variety of stream features that can arise in the vicinity of orbital resonances, and demonstrated how their existence can be used to constrain the shape of the Milky Way’s dark matter halo.</p>
+								<span class="image main"><img src="images/R_GD_2.jpg" alt="" /></span>
+
+								<h3>Separatrix Divergence of Stellar Streams (<font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.1791Y/abstract">Yavetz et al. 2021</a></font>)</h3>
+								<p>Some locations in galaxies are fundamentally inhospitable to stellar streams. We showed how the existence of resonant regions in non-spherical galactic potentials can be detected based on the width of stellar streams in those regions.</p>
+								<span class="image main"><img src="images/R_GD_3.png" alt="" /></span>
+
+							</article>
+
+						<!-- FDM -->
+							<article id="fdm">
+								<h2 class="major">Fuzzy Dark Matter</h2>
+
+								<p>Below are a few selected highlights from my research on Fuzzy Dark Matter (FDM). For more, see my list of <a href="#publications">Publications</a>.</p>
+
+								<h3>Comparing Cold and Fuzzy Dark Matter using Tidally Perturbed Dwarf Galaxies (<font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2024JCAP...03..052W/abstract">Widmark et al. 2024</a></font>)</h3>
+								<p>In work led by Axel Widmark (University of Copenhagen), we compared the evolution of dwarf galaxies composed of Cold Dark Matter (CDM) and Fuzzy Dark Matter (FDM) after a tidal perturbation. We showed how the unique dynamics of FDM lead to long-lived breathing and rotating modes that are also imprinted on the observable stellar component of the galaxies, providing a potential path towards distinguishing between the two models with future dwarf galaxy surveys.</p>
+								<span class="image main"><img src="images/R_FDM_1.png" alt="" /></span>
+
+								<h3>Heating and Disruption of Stellar Shells in FDM Galaxies (Pfaffman & Yavetz in prep.)</h3>
+								<p>The tidal disruption of dwarf galaxies on radial orbits leads to the formation of shell-like structures surrounding the host galaxy. In work led by undergraduate student Gabriel Pfaffman (Columbia University), we showed how in FDM galaxies, the shells can be in resonance with the gravitational fluctuations of the central soliton, leading to unique morphologies. In some cases, the oscillating central potential can also completely destroy the shell-like structures.</p>
+								<span class="image main"><img src="images/R_FDM_2.png" alt="" /></span>
+
+								<h3>Using the Schwarzschild Method to Efficiently Simulate FDM Halos (<font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2022PhRvD.105b3512Y/abstract">Yavetz et al. 2022</a></font>)</h3>
+								<p>One of the main barriers to studying Fuzzy Dark Matter is the computational cost of simulating galaxies and galaxy clusters composed of FDM. We devised an efficient numerical algorithm for modeling FDM galaxies using a superposition of FDM eigenmodes, based on the Schwarzschild method for constructing galaxies in equilibrium.</p>
+								<span class="image main"><img src="images/R_FDM_3.png" alt="" /></span>
+
+							</article>
+
+						<!-- Earth Satellites -->
+							<article id="satellites">
+								<h2 class="major">Earth Satellites</h2>
+
+								<h3>Why Satellites Don’t Crash (<font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2014AmJPh..82..769T/abstract">Tremaine & Yavetz, 2014</a></font>)</h3>
+								<p>Satellites in low Earth orbit (LEO) must conserve their orbital eccentricity to a high degree in order to avoid crashing back into Earth. However, perturbations from the Earth’s multipole moments, the Sun, and the Moon, do not conserve angular momentum, and in theory, could cause all LEO satellites to crash. Of course, this is not the case, as evidenced by the large (and rapidly growing) number of satellites on stable orbits. We showed that, though most of the perturbations mentioned above would indeed cause a large subset of satellites to crash, an accidental property of the Earth’s quadrupole potential has a stabilizing effect that negates the influence of all the other sub-dominant perturbations.
+
+								<span class="image main"><img src="images/R_ES_1.png" alt="" /></span>
+
+							</article>
+
+						<!-- Talks -->
 							<article id="CV">
-								<h2 class="major">C.V.</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Here is my C.V.</p>
+								<h2 class="major">Curriculum Vitae</h2>
+								<embed class="pdf" src="images/TomerYavetzCV.pdf" width="750" height="500">
 							</article>
 
 						<!-- Publications -->
 							<article id="publications">
 								<h2 class="major">Publications</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Here is a link to ADS</p>
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+								<p>A complete list of my publications can also be found using the searches below:</p>
+								<ul class="actions">
+									<li><a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=database%3A%20astronomy&p_=0&q=author%3A(%22yavetz%2C%20tomer%22)&sort=date%20desc%2C%20bibcode%20desc" class="button primary">ADS SEARCH</a></li>
+									<li><a href="https://arxiv.org/search/?query=Yavetz%2C+Tomer&searchtype=author&abstracts=show&order=-announced_date_first&size=50" class="button primary">ARXIV SEARCH</a></li>
+									<li><a href="https://scholar.google.com/citations?user=YJb6dAcAAAAJ&hl=en&oi=ao" class="button primary">GOOGLE SCHOLAR</a></li>
+								</ul>
+								<ol reversed>
+									<li><b><font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240707151Y/abstract">Disrupted Wide Binaries as Dynamical Probes of Galactic Structure</a></font></b><br>
+										<b>Yavetz T. D.</b><br>
+										<i>2024, Submitted to The Astrophysical Journal</i>
+										<br><a href="https://arxiv.org/abs/2407.07151">arXiv: 2407.07151</a></li>
+									<li><b><font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2024JCAP...03..052W/abstract">Fuzzy dark matter dynamics in tidally perturbed dwarf spheroidal galaxy satellites</a></font></b><br>
+										Widmark A., <b>Yavetz T. D.</b>, Li X.<br>
+										<i>2023, Journal of Cosmology and Astroparticle Physics 2024 (03), 052</i><br>
+										<a href="https://arxiv.org/abs/2309.00039">arXiv: 2309.00039</a></li>
+									<li><b><font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...954..215Y/abstract">Stream Fanning and Bifurcations: Observable Signatures of Resonances in Stellar Stream Morphology</a></font></b><br>
+										<b>Yavetz T. D.</b>, Johnston K. V., Pearson S., Price-Whelan A. M., Hamilton C.<br>
+										<i>2023, The Astrophysical Journal 954 (2), 215</i><br>
+										<a href="https://arxiv.org/abs/2212.11006">arXiv: 2212.11006</a></li>
+									<li><b><font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2022PhRvD.105b3512Y/abstract">Construction of wave dark matter halos: Numerical algorithm and analytical constraints</a></font></b><br>
+										<b>Yavetz T. D.</b>, Li X., Hui L.<br>
+										<i>2022, Physical Review D 105 (2), 023512</i><br>
+										<a href="https://arxiv.org/abs/2109.06125">arXiv: 2109.06125</a></li>
+									<li><b><font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.1791Y/abstract">Separatrix divergence of stellar streams in galactic potentials</a></font></b><br>
+										<b>Yavetz T. D.</b>, Johnston K. V., Pearson S., Price-Whelan A. M., Weinberg M. D.<br>
+										<i>2021, MNRAS 501 (2), 1791-1802</i><br>
+										<a href="https://arxiv.org/abs/2011.11919">arXiv: 2011.11919</a></li>
+									<li><b><font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2021PhRvD.103b3508L/abstract">Oscillations and random walk of the soliton core in a fuzzy dark matter halo</a></font></b><br>
+										Li X., Hui L., <b>Yavetz T. D.</b><br>
+										<i>2021, Physical Review D 103 (2), 023508</i><br>
+										<a href="https://arxiv.org/abs/2011.11416">arXiv: 2011.11416</a></li>
+									<li><b><font color="#5CB3FF"><a href="https://ui.adsabs.harvard.edu/abs/2014AmJPh..82..769T/abstract">Why do Earth satellites stay up?</a></font></b><br>
+										Tremaine S., <b>Yavetz T. D.</b><br>
+										<i>2014, American Journal of Physics 82 (8), 769-777</i><br>
+										<a href="https://arxiv.org/abs/1309.5244">arXiv: 1309.5244</a></li>
+								</ol>
 							</article>
 
 						<!-- Talks -->
 							<article id="talks">
-								<h2 class="major">Talks</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Here are a few links to my talks</p>
+								<h2 class="major">Selected Talks</h2>
+								<p><b><i>Stellar Streams as Probes of Galactic Structure and Dark Matter Halos</i></b><br>IAS Astrophysics Seminar, March 2023</p>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/KZ62WrIvktE?si=KnvYGgrWKTZO781g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+								<p></p>
+								<p><b><i>Numerical Construction of Wave Dark Matter Halos</i></b><br>IAS/Princeton Cosmology Lunch Talk, October 2021</p>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/MDbjwoZkI-4?si=U6atZ83wKliq9UQn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							</article>
 
 						<!-- Teaching -->
 							<article id="teaching">
 								<h2 class="major">Teaching</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>I'm passionate about teaching</p>
+								<span class="image main"><img src="images/TDY1.png" alt="" /></span>
+								<p>Below is a list of courses in which I have been involved as an instructor:</p>
+								<font size="2"> 
+								<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Course</th>
+													<th>Institution</th>
+													<th>Role</th>
+													<th>Date</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>ASTR GR6003: Galaxies</td>
+													<td>Columbia</td>
+													<td>Coding Lab Instructor</td>
+													<td>Fall 2020</td>
+												</tr>
+												<tr>
+													<td>ASTR UN1403: Earth, Moon and Planets</td>
+													<td>Columbia</td>
+													<td>Lecturer</td>
+													<td>Fall 2019</td>
+												</tr>
+												<tr>
+													<td>ASTR UN1403: Earth, Moon and Planets</td>
+													<td>Columbia</td>
+													<td>Lecturer</td>
+													<td>Spring 2019</td>
+												</tr>
+												<tr>
+													<td>ASTR GR1904: Stars, Galaxies and Cosmology Lab</td>
+													<td>Columbia</td>
+													<td>Lab Instructor</td>
+													<td>Spring 2019</td>
+												</tr>
+												<tr>
+													<td>ASTR GR1903: Earth, Moon and Planets Lab</td>
+													<td>Columbia</td>
+													<td>Lab Instructor</td>
+													<td>Fall 2018</td>
+												</tr>
+												<tr>
+													<td>ASTR UN1610: Theories of the Universe: From Babylon to the Big Bang</td>
+													<td>Columbia</td>
+													<td>Teaching Assistant</td>
+													<td>Spring 2018</td>
+												</tr>
+												<tr>
+													<td>ASTR UN1404: Stars, Galaxies and Cosmology</td>
+													<td>Columbia</td>
+													<td>Teaching Assistant</td>
+													<td>Fall 2017</td>
+												</tr>
+												<tr>
+													<td>AST 204: Topics in Modern Astronomy</td>
+													<td>Princeton</td>
+													<td>Teaching Assistant</td>
+													<td>Spring 2013</td>
+												</tr>
+											</tbody>
+											<tfoot>
+											</tfoot>
+										</table>
+									</div>
+								</font>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>You can reach me at tyavetz @ ias.edu</p>
+								<div class="table-wrapper">
+									<table class="alt2">
+										<tbody>
+											<tr>
+												<td><i>Email:</i></td>
+												<td>tyavetz [at] ias.edu</td>
+											</tr>
+											<tr>
+												<td><i>Office:</i></td>
+												<td>227 Bloomberg Hall</td>
+											</tr>
+											<tr>
+												<td><i>Mailing address:</i></td>
+												<td>Tomer Yavetz, BH-227<br>1 Einstein Drive<br>Princeton, NJ 08540<br></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</article>
 
 						<!-- Elements -->
@@ -342,14 +527,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Tomer Yavetz. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Tomer Yavetz. Design: <a href="https://html5up.net">HTML5 UP</a>. Image credit: ESA/Gaia/DPAC - <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/">CC BY-SA 3.0 IGO</a>.</p>
 					</footer>
 
 			</div>
 
 		<!-- BG -->
 			<div id="bg"></div>
-
+=
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
